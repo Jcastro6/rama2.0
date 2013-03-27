@@ -43,8 +43,8 @@ $(function(){
             });
         $("#op_avancada")
             .click(function(){
-			
-                $("#op_avancada_block1").show("slow");
+				$("#op_avancada_block1").hide();
+                
                 $("#op_avancada").hide();
                 $("#op_avancada_fecha").show();
                 $("#save_opv").animate({width:'200px'},1000);

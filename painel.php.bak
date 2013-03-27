@@ -116,7 +116,7 @@
 </div><!--termino opções avançadas do block1-->
     <div id="save_opv">
 		<font color="white">
-     	<p id="op_avancada" style="curso:pointer;"><a>Op&ccedil;oes avan&ccedil;adas &gt;&gt;</a></p>
+     	<p id="op_avancada"><a>Op&ccedil;oes avan&ccedil;adas &gt;&gt;</a></p>
      	<p id="op_avancada_fecha"><a>&lt;&lt; Op&ccedil;oes avan&ccedil;adas</a></p>
 		</font>
  	</div>

@@ -60,13 +60,6 @@
     </div>
   </div>
 </div>
-<script type="text/javascript">
-Shadowbox.init({
-    handleOversize:     "drag",
-    displayNav:         false,
-    handleUnsupported:  "remove",
-    autoplayMovies:     false  
-});
-</script>
+
 </body>
 </html>

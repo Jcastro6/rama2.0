@@ -82,7 +82,6 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
 <body leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><div class="content">
 <table width="100%">
     <tr>
-    	<td ><a href="index.php"><img src="img/logo_rama.png" width="230px" height="90px" alt="Inicio" /></a></td>
         <td class="bar_h_" align="center"><a href="index.php"><div class="botao01">HOME</div></a></td>
         <td class="bar_h_" align="center"><a href="empresa.php"><div class="botao01">EMPRESA</div></a></td>
         <td class="bar_h_" align="center"><a href="passagens.php"><div class="botao01">PASSAGENS</div></a></td>
@@ -94,9 +93,9 @@ em { font-weight: bold; padding-right: 1em; vertical-align: top; }
             	<input name="txt_email" type="text" id="txt_email"  size="40" class="txt_email" height="25px" />
                 <span class="bt_enviar"> <input  class="botao01" type="submit" name="btn_enviar" id="btn_enviar" /></span>
     	    </form> -->
-            <form method="post" action="newsletter.php" name="form" id="nwslttr" onSubmit="return valida(this);">
+            <form method="post" action="newsletter.php" name="form" id="nwslttr" onsubmit="return valida(this);">
             	    <input type="email" required="required" id="nl-nome" name="newsletter" value="Assine nossa newsletter" 
-                    	onfocus="if(this.value == 'Assine nossa newsletter'){this.value='';}" onBlur="if(this.value == '')                  		{this.value = 'Assine nossa newsletter';}" />
+                    	onfocus="if(this.value == 'Assine nossa newsletter'){this.value='';}" onblur="if(this.value == '')                  		{this.value = 'Assine nossa newsletter';}" />
                     <input type="submit" id="nl-assinar" class="botao01" name="nl-assinar" value="Assinar" />
 			</form>
         </td>

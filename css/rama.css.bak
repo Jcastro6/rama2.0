@@ -43,7 +43,7 @@ tr{height:26px;}
 	position:absolute;
 	width:55%;
 	height:95%;
-	left:1%;
+	left:2%;
 	top:2%;
 }
 

@@ -12,6 +12,7 @@
         <script src="jsp/jquery-1.8.2.min.js" type="text/javascript"></script>
 	    <script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
 
+
 <body text="#000000" class="body">
 <!--INSERÇAO DA BARRA HORIZONTAL DE NAVEGAÇÃO -->
 <div id="bar_h">

@@ -54,7 +54,7 @@ form label {
 		#escalaDIV{margin:5px 1px 5px 1%; background-color:green;}
 		#bilhete{margin:5px 1px 5px 46%;  background-color:red;}
 
-#op_avancada{curso:pointer;}
+#save_opv{curso:pointer;}
 #op_avancada_fecha{display: none;}
 
 #block2 {display: none;position:absolute;width: 58%;left:2%;}

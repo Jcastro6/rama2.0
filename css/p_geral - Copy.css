@@ -1,0 +1,56 @@
+@charset "utf-8";
+/* CSS Document */
+
+a:link {text-decoration: none;color: #333333}
+a:active {text-decoration: none;}
+a:visited {text-decoration: none;color: #333333}
+a:hover {text-decoration:none;color: #FFF}
+
+#bar_{background-color:#666;width:100%; height:50px; margin-top:0px;}
+.bar_:hover{background-color:#999;text-shadow:#FFF;}
+
+#block1 {
+	position: absolute;
+	width: 531px;
+	left: 3%;
+	top: 72px;
+	height: 406px;
+}
+
+#op_basica_idavolta{
+	position: absolute;
+	left: 5px;
+	top: 40px;
+	width: 318px;
+	height: 50px;
+}
+.btdata{position: absolute;left: 100px; top:36px}
+.btdata2{
+	position: absolute;
+	left: 278px;
+	top: 24px
+}
+    /*.div_volta{position: absolute; left: 0px;top:53%;}*/
+    #save_opv{}
+#op_avancada{position: absolute; white-space-collapse:collapse; left:1%; background-color:#999;}
+#adulto_crianca{position: absolute; left:1%; width:150px;top:90px; background-color:#999;}
+#op_avancada_p{position: absolute; left:1%;top:10%; background-color:#93C;}
+.op_avancada_1{position: absolute; left:250px;top:22%; background-color:#F33;}
+#save_opv{position:absolute;left:3%;top:40%;}
+#pesquisar{position:absolute;left:450px;top:90%;}
+
+
+#block2 {display: none;position:absolute;width: 58%;left:2%;}
+ .dest_volta{position: absolute;left: 250px;top:-16px;}
+#block3 {display: none;position:absolute;width: 58%;left:2%;}
+.criancaH{position: absolute; left:75px;top:161px}
+#op_avancada_p{display: none; top:220px;}
+#op_avancada_fecha{display: none;}
+
+/* formatação da data */
+    .dia {font-family: helvetica, arial; font-size: 8pt; color: #FFFFFF}
+    .data {font-family: helvetica, arial; font-size: 8pt; text-decoration:none; color:#191970}
+    .mes {font-family: helvetica, arial; font-size: 8pt}
+    .Cabecalho_Calendario {font-family: helvetica, arial; font-size: 10pt; color: #000000; text-decoration:none; font-weight:bold}
+/*fim formatação data*/
+ 
