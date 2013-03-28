@@ -44,6 +44,6 @@
         <option value="Mais">Mais</option>
      </select>
 	</div>
-     <input id="submit_block2" name="submit_block2" type="submit" value="Pesquisar" />
+     <input name="submit_block2" type="submit" value="Pesquisar" />
    </form>
  </div>

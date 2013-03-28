@@ -42,9 +42,6 @@
         <option value="Mais">Mais</option>
       </select>
 	</div>
-	
-	<div id="hotel_sub">
-		<input id="submit_hotel" name="submit_hotel" type="submit" value="Pesquisar" />
-	</div<
+  <input id="submit_hotel" name="submit_hotel" type="submit" value="Pesquisar" />
  </form>
 </div>

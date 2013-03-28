@@ -116,12 +116,12 @@
 </div><!--termino opções avançadas do block1-->
     <div id="save_opv">
 		<font color="white">
-     	<p id="op_avancada" style="curso:pointer;"><a>Op&ccedil;oes avan&ccedil;adas &gt;&gt;</a></p>
-     	<p id="op_avancada_fecha"><a>&lt;&lt; Op&ccedil;oes avan&ccedil;adas</a></p>
+     	<p id="op_avancada" style="cursor:pointer;"><a>Op&ccedil;oes avan&ccedil;adas &gt;&gt;</a></p>
+     	<p id="op_avancada_fecha" style="cursor:pointer;"><a>&lt;&lt; Op&ccedil;oes avan&ccedil;adas</a></p>
 		</font>
  	</div>
  	<div id="pesquisar">
-    	<input name="submit_block1" type="submit" value="Pesquisar"></input>
+    	<input id="submit_block1" name="submit_block1" type="submit" value="Pesquisar" />
 	</div>
 </form>
 </div>
