@@ -14,12 +14,6 @@ $escalap = (isset($_POST['escala'])) ? addslashes($_POST['escala']) : '';
 $c_bilhete = (isset($_POST['c_bilhete'])) ? addslashes($_POST['c_bilhete']) : '';
 $cia_aerea = (isset($_POST['cia_aerea'])) ? addslashes($_POST['cia_aerea']) : '';
 
-/*
-
-    $c_bilhete = $_POST['c_bilhete'];
-    $cia_aerea = $_POST['cia_aerea'];   
-};
-*/
 
 $condicoes = '';
 

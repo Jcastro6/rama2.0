@@ -21,8 +21,6 @@ if($entradah){
     $condicoes .= " entrada like \"%{$entradah}%";
 }
 
-
-
 if ($condicoes == "") {
     $sql = mysql_query("SELECT * FROM hotel LIMIT 10");
 }

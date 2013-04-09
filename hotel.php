@@ -1,7 +1,5 @@
 <?php
-
 require 'pesquisarhotel.php';
-
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html LANG="pt-br" DIR="ltr">
@@ -13,17 +11,8 @@ require 'pesquisarhotel.php';
         <link rel="stylesheet" href="css/rama.css" />
         <link rel="stylesheet" href="css/p_geral.css" />
         <link rel="shortcut icon" href="favicon.ico" />
-        <script src="jsp/jquery-1.8.2.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="jsp/scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="shadowbox-3.0.3/shadowbox.css" />
-
-<script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
 
 <body text="#000000" class="body">
-
-<div id="top">
- 	<img src="img/banne1.png" />
-</div>
 		
 <div id="bar_h">
 <?php
@@ -49,7 +38,7 @@ require 'pesquisarhotel.php';
             </tr>
             <?php while($hotel = mysql_fetch_array($sql)) {?>
             <tr  align="center">              
-                <td><?php echo $hotel['endereco']; ?></td>
+                <td><?php echo $hotel['destinoh']; ?></td>
                 <!-- <td><?php echo $hotel['destino']; ?></td>
                 <td><?php echo $hotel['ida']; ?></td>
                 <td><?php echo $hotel['volta']; ?></td>
@@ -60,7 +49,7 @@ require 'pesquisarhotel.php';
                 <td><?php echo $hotel['escala']; ?></td>
                 <td><?php echo $hotel['classe_bilhete'];?></td>
                 <td><?php echo $hotel['valor_passagem'];?></td>-->
-                <td><?php echo "".$hotel['entrada']."<br />";?></td>
+                <td><?php echo "".$hotel['entradah']."<br />";?></td>
             </tr>
             <?php } ?>
         </table>
@@ -68,4 +57,8 @@ require 'pesquisarhotel.php';
     
 </div>
 </body>
+		<script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
+        <script src="jsp/jquery-1.8.2.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="jsp/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="shadowbox-3.0.3/shadowbox.css" />
 </html>

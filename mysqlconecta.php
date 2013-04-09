@@ -1,5 +1,5 @@
 <?php
-$dbname     ="rama_turismo"; 
+$dbname     ="ramaTurismo"; 
 $usuario    ="root"; 
 $password   ="";
 $server     = "localhost";
