@@ -61,7 +61,7 @@ $(function(){
             .click(function(){
                 $("#email_news").show();
                 //$("#email_news").show();
-            });
+        });
 });
 
 

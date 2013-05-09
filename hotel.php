@@ -13,7 +13,12 @@ require 'pesquisarhotel.php';
         <link rel="shortcut icon" href="favicon.ico" />
 
 <body text="#000000" class="body">
-		
+<div id="acessAdmin" style="position:absolute; top:20%; width:20px; height:150px; ">
+	<a href="Admin/index.php"><img src="img/btao_rama.jpg" /></a>
+</div>
+<!--sua janela modal aqui -->
+	<?php include 'promocoes/promo1.php'?>
+<!--fim sua janela modal aqui -->		
 <div id="bar_h">
 <?php
     include 'bar_h.php';
@@ -22,43 +27,31 @@ require 'pesquisarhotel.php';
 
 <div id="center">
     <div id="show_passagens">
-        <table width="100%" align="center">
-            <tr id="td_passagem" align="center" height="20px">
+        <table class="table_hotel" width="100%" align="center">
+            <tr class="tr_hotel" id="td_passagem" align="center" height="20px">
                 <td>Destino</td>                
+                <td>Endereço</td>
                 <td>Entrada</td>
-                <!--<td>Data da volta</td>
-                <td>Adultos</td>
-                <td>Crian&ccedil;as</td>
-                <td>Hora partida</td>
-                <td>Hora de chegada</td>
-                <td>Escala</td>
-                <td>Classe</td>
-                <td>Valor da passagem</td>
-                <td>Cia aerea</td>-->
+                <td>Saida</td>
+                <td>Valor</td>
+                <td>Comprar</td>
             </tr>
             <?php while($hotel = mysql_fetch_array($sql)) {?>
-            <tr  align="center">              
+            <tr class="td_hotel" align="center">
                 <td><?php echo $hotel['destinoh']; ?></td>
-                <!-- <td><?php echo $hotel['destino']; ?></td>
-                <td><?php echo $hotel['ida']; ?></td>
-                <td><?php echo $hotel['volta']; ?></td>
-                <td><?php echo $hotel['adultos']; ?></td>
-                <td><?php echo $hotel['criancas']; ?></td>
-                <td><?php echo $hotel['h_partida']; ?></td>
-                <td><?php echo $hotel['h_chegada']; ?></td>
-                <td><?php echo $hotel['escala']; ?></td>
-                <td><?php echo $hotel['classe_bilhete'];?></td>
-                <td><?php echo $hotel['valor_passagem'];?></td>-->
+                <td><?php echo $hotel['Endereco']; ?></td>
                 <td><?php echo "".$hotel['entradah']."<br />";?></td>
+                <td><?php echo $hotel['saidah']; ?></td>
+                <td><?php echo $hotel['valor'].",00"; ?></td>
+            	<td><a href="comprar.php?hotel=<?php echo $hotel['id']; ?>" title="Clique para comprar">Comprar</a></td>
             </tr>
             <?php } ?>
         </table>
     </div>
     
 </div>
+<div id="info_left">
+	<?php include 'PostSlide/PostsSlideOuts.php'; ?>
+</div>
 </body>
-		<script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
-        <script src="jsp/jquery-1.8.2.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="jsp/scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="shadowbox-3.0.3/shadowbox.css" />
 </html>

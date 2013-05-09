@@ -45,6 +45,6 @@
 	
 	<div id="hotel_sub">
 		<input id="submit_hotel" name="submit_hotel" type="submit" value="Pesquisar" />
-	</div<
+	</div>
  </form>
 </div>

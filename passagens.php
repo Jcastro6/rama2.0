@@ -1,7 +1,5 @@
 <?php
-
 require 'pesquisar_psgem.php';
-
 ?>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
 <html LANG="pt-br" DIR="ltr">
@@ -13,32 +11,24 @@ require 'pesquisar_psgem.php';
         <link rel="stylesheet" href="css/rama.css" />
         <link rel="stylesheet" href="css/p_geral.css" />
         <link rel="shortcut icon" href="favicon.ico" />
-        <script src="jsp/jquery-1.8.2.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="jsp/scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="shadowbox-3.0.3/shadowbox.css" />
-
-<script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
-
+        	
 <body text="#000000" class="body">
-
-<div id="top">
- 	<img src="img/banne1.png" />
+<div id="acessAdmin" style="position:absolute; top:20%; width:20px; height:150px; ">
+	<a href="Admin/index.php"><img src="img/btao_rama.jpg" /></a>
 </div>
-
-<?php 
-    include 'top_.php';
-?>
-		
+<!--sua janela modal aqui -->
+	<?php include 'promocoes/promo1.php'?>
+<!--fim sua janela modal aqui -->		
 <div id="bar_h">
 <?php
     include 'bar_h.php';
 ?>
 </div>
-
+</div>
 <div id="center">
     <div id="show_passagens">
-        <table width="100%" align="center">
-            <tr id="td_passagem" align="center" height="20px">
+        <table  class="table_passagem" width="100%" align="center" border="1">
+            <tr class="tr_passagem" align="center" height="20px">
                 <td>Origem do voo</td>
                 <td>Destino</td>
                 <td>Data da ida</td>
@@ -54,25 +44,29 @@ require 'pesquisar_psgem.php';
                 <td>Comprar</td>
             </tr>
             <?php while($dados = mysql_fetch_array($sql)) {?>
-            <tr  align="center">              
+            <tr class="td_passagem" align="center">              
                 <td><?php echo $dados['origem']; ?></td>
                 <td><?php echo $dados['destino']; ?></td>
-                <td><?php echo $dados['ida']; ?></td>
-                <td><?php echo $dados['volta']; ?></td>
-                <td><?php echo $dados['adultos']; ?></td>
-                <td><?php echo $dados['criancas']; ?></td>
+                <td><?php echo $dados['data1']; ?></td>
+                <td><?php echo $dados['data2']; ?></td>
+                <td><?php echo $dados['selectAdultosP']; ?></td>
+                <td><?php echo $dados['selectCriancaP']; ?></td>
                 <td><?php echo $dados['h_partida']; ?></td>
                 <td><?php echo $dados['h_chegada']; ?></td>
                 <td><?php echo $dados['escala']; ?></td>
-                <td><?php echo $dados['classe_bilhete'];?></td>
-                <td><?php echo $dados['valor_passagem'];?></td>
+                <td><?php echo $dados['c_bilhete'];?></td>
+                <td><?php echo $dados['valor'].",00";?></td>
                 <td><?php echo "".$dados['cia_aerea']."<br />";?></td>
-                <td><input type="checkbox" name="comprar" /></td>
+                <td><a href="comprar.php?dados=<?php echo $dados['id']; ?>" title="Clique para comprar">Comprar</a></td>
+            </tr>
             </tr>
             <?php } ?>
         </table>
     </div>
     
+</div>
+<div id="info_left">
+	<?php include 'PostSlide/PostsSlideOuts.php'; ?>
 </div>
 </body>
 </html>

@@ -1,5 +1,4 @@
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!DOCTYPE html>
 <html LANG="pt-br" DIR="ltr">
 <head>
 	<meta HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
@@ -9,64 +8,51 @@
         <link rel="stylesheet" href="css/rama.css" />
         <link rel="stylesheet" href="css/p_geral.css" />
         <link rel="shortcut icon" href="favicon.ico" />
-        <script src="jsp/jquery-1.8.2.min.js" type="text/javascript"></script>
-        <script type="text/javascript" src="jsp/scripts.js"></script>
-        <link rel="stylesheet" type="text/css" href="shadowbox-3.0.3/shadowbox.css" />
+        
         <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-        <script type="text/javascript">var _siteRoot='galeria.html',_root='galeria.html';</script>
-        <script type="text/javascript" src="jsp/jquery.js"></script>
-        <script type="text/javascript" src="jsp/scripts_galery.js"></script>
-
-<script type="text/javascript" src="shadowbox-3.0.3/shadowbox.js"></script>
-
+        <script src="jsp/jquery-1.8.2.min.js" type="text/javascript"></script>
+		<script type="text/javascript" src="jsp/scripts.js"></script>
+		<script type="text/javascript" src="jsp/jquery.validate.js"></script>
+        
 <body text="#000000" class="body">
-
-<div id="top">
- 	<img src="img/banne1.png" />
+<div id="acessAdmin" style="position:absolute; top:20%; width:20px; height:150px; ">
+	<a href="Admin/index.php"><img src="img/btao_rama.jpg" /></a>
 </div>
-		
+<!--sua janela modal aqui -->
+<?php include 'promocoes/promo1.php'?>
+<!--fim sua janela modal aqui -->
 <div id="bar_h">
-<?php
-    include 'bar_h.php';
-?>
+<?php   include 'bar_h.php'; ?>
 </div>
-
 <div id="center">
     <div id="show_passagens">
         <table width="100%" align="center">
             <tr id="td_passagem" align="center">
-                <td>Quem somos</td>
+                <td><h2>Quem somos</h2></td>
             </tr>
         </table>
-        <div id="text_rama>">
+        <div id="text_rama">
             <p class="text_rama">
-                <font size="4" face="arial" align="justify">RAMA Viagens e Turismo ltda é uma empresa familiar que preza pelo conforto e bem estar de seus clientes e funcionarios,
+                RAMA Viagens e Turismo ltda é uma empresa familiar que preza pelo conforto e bem estar de seus clientes e funcionarios,
                     uma empresa com a finalidade de venda de passagens aereas e hospedagem em alguns dos melhores hoteis do Mundo. Buscamos sempre oferecer o melhor 
                     desde nossa cede que fica em Angola até aqui no Brazil, sem deixar nenhum de nossos clientes sem os devidos cuidados e tratamentos que todos procuram.
-                    Somos sua agencia de viagens online e concreta, somos RAMA VIAGENS.<br /><br /><br /><br />
-                </font>
-            <div id="img_logo"><img src="img/logo.png" /></div>
+                    Somos sua agencia de viagens online e concreta, somos RAMA VIAGENS.
+                
             </p>
+            <p class="text_rama">&nbsp;</p>
+            <div id="img_logo"><img src="img/logo.png" width="175" height="100" /></div>
         </div>
     <div id="show_passagens2">
         <table width="100%" align="left">
             <tr id="td_passagem" align="center">
-                <td>Galeria</td>
+                <td><h2>Galeria</h2></td>
             </tr>
         </table>
-        <div id="galeria">
-            <?php include 'example/galeria.html'; ?>
-        </div>
     </div>
   </div>
 </div>
-<script type="text/javascript">
-Shadowbox.init({
-    handleOversize:     "drag",
-    displayNav:         false,
-    handleUnsupported:  "remove",
-    autoplayMovies:     false  
-});
-</script>
+<div id="info_left">
+	<?php include 'PostSlide/PostsSlideOuts.php'; ?>
+</div>
 </body>
 </html>

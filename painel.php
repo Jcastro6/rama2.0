@@ -1,5 +1,5 @@
 <!--Inicio de painel-->
-<div id="painel">    
+  
 <!--barra horizontal-->
     <div id="bar_">
        <table width="100%" height="50px" align="center"> 
@@ -130,4 +130,4 @@
         <!--terceiro block de formulario-->
 <?php include 'form3.php'; ?>
         
-</div><!--Final de painel-->
+<!--Final de painel-->
